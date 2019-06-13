@@ -9,6 +9,7 @@ typedef struct node
 	struct node *left, *right;
 	char *show;
 } node;
+
 node *createNode(char *string)
 {
 	node *newNode = calloc(1, sizeof(node));
@@ -17,6 +18,7 @@ node *createNode(char *string)
 	newNode->show[strlen(string)] = '\0';
 	return newNode;
 }
+
 // Traverses through the BST to insert alphabetically
 node *treeTraversalHelper(node *root, node *nodeyNode)
 {
